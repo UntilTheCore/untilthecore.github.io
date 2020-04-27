@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Welcome</title>
+    <link>https://untilthecore.github.io/tags/hugo/</link>
+    <description>Recent content in Hugo on Welcome</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Mon, 27 Apr 2020 13:06:46 +0800</lastBuildDate>
+    
+	<atom:link href="https://untilthecore.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>使用hugo搭建个人博客</title>
+      <link>https://untilthecore.github.io/posts/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Mon, 27 Apr 2020 13:06:46 +0800</pubDate>
+      
+      <guid>https://untilthecore.github.io/posts/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>阅读前你需要了解这些内容：  git MarkDown  使用 Hugo 搭建博客的步骤非常简单。
+按照官网 Quick Start 即可快速创建一个站点。此文旨在对官方文档细节补充以及部署到自己的github上。
+  下载Hugo
+  解压出对应包中的Hugo.exe到一个空目录
+  将 2 中存放Hugo.exe的目录添加到系统变量&amp;quot;path&amp;quot;中。（不会设置？点这里）
+  进入Hugo官网 点击 Quick Start
+  当下载并设置好Hugo后，就可以直接从Step 2开始操作。
+# 这个 quickstart 请改成你想要的名字,最好对应你github上的名字且全小写 # 比如：untilthecore.github.io-generator # 这个命令会生成 untilthecore.github.io-generator 的文件夹 # 这个文件夹就是博客站点的生成器，为了方便知道这个文件夹是干什么的，在最后加上 generator，当然 creator 也行 hugo new site quickstart # 那么真正要输入的命令为 hugo new site untilthecore.github.io-generator   当得到站点生成器文件夹后，使用 cd 命令进入文件夹并依次执行以下命令
+# 为 untilthecore.github.io-generator 初始化 git 仓库 git init # 为站点设置一个主题（这个主题可以修改） git submodule add https://github.</description>
+    </item>
+    
+  </channel>
+</rss>
