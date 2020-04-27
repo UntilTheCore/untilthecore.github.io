@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>教程 on Welcome</title>
+    <title>教程 on My Blog</title>
     <link>https://untilthecore.github.io/categories/%E6%95%99%E7%A8%8B/</link>
-    <description>Recent content in 教程 on Welcome</description>
+    <description>Recent content in 教程 on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 27 Apr 2020 13:06:46 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 27 Apr 2020 22:28:15 +0800</lastBuildDate>
     
 	<atom:link href="https://untilthecore.github.io/categories/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>正确使用hugo主题的姿势</title>
+      <link>https://untilthecore.github.io/posts/%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8hugo%E4%B8%BB%E9%A2%98%E7%9A%84%E5%A7%BF%E5%8A%BF/</link>
+      <pubDate>Mon, 27 Apr 2020 22:28:15 +0800</pubDate>
+      
+      <guid>https://untilthecore.github.io/posts/%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8hugo%E4%B8%BB%E9%A2%98%E7%9A%84%E5%A7%BF%E5%8A%BF/</guid>
+      <description>在《如何用hugo搭建个人博客中》已经介绍了简单的主题引入办法，这里就不再赘述了。
+现在我们来讲讲如何配置我们下载的新主题！（内容可能不多不全，Hugo的使用还在摸索阶段）
+  下载主题前要先看主题的Demo，看是否是自己想要的。没有Demo示例给看那就clone下来后跑起来看看是不是中意的，但是有的clone到的主题有可能较精简，怎么办呢？往下看。
+  选好中意的主题了，那么就一定要看作者的配置介绍，这个配置介绍一般都是介绍如何配置config.toml，但这个介绍可能不够全，那么就要自己看clone下来的主题中这个文件夹exampleSite中的config.toml。有的主题还有full-config.toml,这个内容更全面。以我使用的主题为例，路径结构为：themes\hello-friend-ng\exampleSite\config.toml
+  接下来我将以我使用的主题为例，介绍config.toml配置内容
+[[menu.main]] identifier = &amp;#34;blog&amp;#34; name = &amp;#34;Blogs&amp;#34; url = &amp;#34;/posts&amp;#34; [[menu.main]] name = &amp;#34;Categories&amp;#34; identifier = &amp;#34;categories&amp;#34; url = &amp;#34;/categories/&amp;#34; [[menu.main]] identifier = &amp;#34;tags&amp;#34; name = &amp;#34;Tags&amp;#34; url = &amp;#34;/tags/&amp;#34; [[menu.main]] identifier = &amp;#34;about&amp;#34; name = &amp;#34;About&amp;#34; url = &amp;#34;about/&amp;#34; 有[[menu.main]]即配置导航菜单，对应的地方如图：
+[[params.social]] name = &amp;#34;email&amp;#34; url = &amp;#34;mailto:untilthecore@gmail.com&amp;#34; [[params.social]] name = &amp;#34;github&amp;#34; url = &amp;#34;https://github.com/UntilTheCore&amp;#34; 有[[params.social]]即配置图标链接，对应地方如图：
+baseurl = &amp;#34;https://untilthecore.github.io/&amp;#34; title = &amp;#34;My Blog&amp;#34; languageCode = &amp;#34;zh-Hans&amp;#34; theme = &amp;#34;hello-friend-ng&amp;#34;  baseurl：配置站点基址，如果要放在github上或者自己的云服务器上，请正确配置地址，否则出了能访问主页，其他地方都是 404 title：设置标题 languageCode：设置语言 theme：设置主题  其他的小地方的配置有注释，配合本地服务器可以方面查看修改后的效果。</description>
+    </item>
     
     <item>
       <title>使用hugo搭建个人博客</title>

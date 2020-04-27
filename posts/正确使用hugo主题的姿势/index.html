@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="在《如何用hugo搭建个人博客中》已经介绍了简单的主题引入办法，这里就不再赘述了。
+现在我们来讲讲如何配置我们下载的新主题！（内容可能不多不全，Hugo的使用还在摸索阶段）
+  下载主题前要先看主题的Demo，看是否是自己想要的。没有Demo示例给看那就clone下来后跑起来看看是不是中意的，但是有的clone到的主题有可能较精简，怎么办呢？往下看。
+  选好中意的主题了，那么就一定要看作者的配置介绍，这个配置介绍一般都是介绍如何配置config.toml，但这个介绍可能不够全，那么就要自己看clone下来的主题中这个文件夹exampleSite中的config.toml。有的主题还有full-config.toml,这个内容更全面。以我使用的主题为例，路径结构为：themes\hello-friend-ng\exampleSite\config.toml
+  接下来我将以我使用的主题为例，介绍config.toml配置内容
+[[menu.main]] identifier = &amp;#34;blog&amp;#34; name = &amp;#34;Blogs&amp;#34; url = &amp;#34;/posts&amp;#34; [[menu.main]] name = &amp;#34;Categories&amp;#34; identifier = &amp;#34;categories&amp;#34; url = &amp;#34;/categories/&amp;#34; [[menu.main]] identifier = &amp;#34;tags&amp;#34; name = &amp;#34;Tags&amp;#34; url = &amp;#34;/tags/&amp;#34; [[menu.main]] identifier = &amp;#34;about&amp;#34; name = &amp;#34;About&amp;#34; url = &amp;#34;about/&amp;#34; 有[[menu.main]]即配置导航菜单，对应的地方如图：
+[[params.social]] name = &amp;#34;email&amp;#34; url = &amp;#34;mailto:untilthecore@gmail.com&amp;#34; [[params.social]] name = &amp;#34;github&amp;#34; url = &amp;#34;https://github.com/UntilTheCore&amp;#34; 有[[params.social]]即配置图标链接，对应地方如图：
+baseurl = &amp;#34;https://untilthecore.github.io/&amp;#34; title = &amp;#34;My Blog&amp;#34; languageCode = &amp;#34;zh-Hans&amp;#34; theme = &amp;#34;hello-friend-ng&amp;#34;  baseurl：配置站点基址，如果要放在github上或者自己的云服务器上，请正确配置地址，否则出了能访问主页，其他地方都是 404 title：设置标题 languageCode：设置语言 theme：设置主题  其他的小地方的配置有注释，配合本地服务器可以方面查看修改后的效果。" />
+<meta name="keywords" content="homepage, blog, Hugo" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://untilthecore.github.io/posts/%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8hugo%E4%B8%BB%E9%A2%98%E7%9A%84%E5%A7%BF%E5%8A%BF/" />
+
+
+    <title>
+        
+            正确使用hugo主题的姿势 :: My Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.7bfbbe12786fa0ded4b4c0d792cbb36a5bd0bdb0b856dde57aa7b1f6fe0f2b87.css">
+
+
+
+
+
+
+<meta itemprop="name" content="正确使用hugo主题的姿势">
+<meta itemprop="description" content="在《如何用hugo搭建个人博客中》已经介绍了简单的主题引入办法，这里就不再赘述了。
+现在我们来讲讲如何配置我们下载的新主题！（内容可能不多不全，Hugo的使用还在摸索阶段）
+  下载主题前要先看主题的Demo，看是否是自己想要的。没有Demo示例给看那就clone下来后跑起来看看是不是中意的，但是有的clone到的主题有可能较精简，怎么办呢？往下看。
+  选好中意的主题了，那么就一定要看作者的配置介绍，这个配置介绍一般都是介绍如何配置config.toml，但这个介绍可能不够全，那么就要自己看clone下来的主题中这个文件夹exampleSite中的config.toml。有的主题还有full-config.toml,这个内容更全面。以我使用的主题为例，路径结构为：themes\hello-friend-ng\exampleSite\config.toml
+  接下来我将以我使用的主题为例，介绍config.toml配置内容
+[[menu.main]] identifier = &#34;blog&#34; name = &#34;Blogs&#34; url = &#34;/posts&#34; [[menu.main]] name = &#34;Categories&#34; identifier = &#34;categories&#34; url = &#34;/categories/&#34; [[menu.main]] identifier = &#34;tags&#34; name = &#34;Tags&#34; url = &#34;/tags/&#34; [[menu.main]] identifier = &#34;about&#34; name = &#34;About&#34; url = &#34;about/&#34; 有[[menu.main]]即配置导航菜单，对应的地方如图：
+[[params.social]] name = &#34;email&#34; url = &#34;mailto:untilthecore@gmail.com&#34; [[params.social]] name = &#34;github&#34; url = &#34;https://github.com/UntilTheCore&#34; 有[[params.social]]即配置图标链接，对应地方如图：
+baseurl = &#34;https://untilthecore.github.io/&#34; title = &#34;My Blog&#34; languageCode = &#34;zh-Hans&#34; theme = &#34;hello-friend-ng&#34;  baseurl：配置站点基址，如果要放在github上或者自己的云服务器上，请正确配置地址，否则出了能访问主页，其他地方都是 404 title：设置标题 languageCode：设置语言 theme：设置主题  其他的小地方的配置有注释，配合本地服务器可以方面查看修改后的效果。">
+<meta itemprop="datePublished" content="2020-04-27T22:28:15&#43;08:00" />
+<meta itemprop="dateModified" content="2020-04-27T22:28:15&#43;08:00" />
+<meta itemprop="wordCount" content="105">
+<meta itemprop="image" content="https://untilthecore.github.io/"/>
+
+
+
+<meta itemprop="keywords" content="Hugo," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://untilthecore.github.io/"/>
+
+<meta name="twitter:title" content="正确使用hugo主题的姿势"/>
+<meta name="twitter:description" content="在《如何用hugo搭建个人博客中》已经介绍了简单的主题引入办法，这里就不再赘述了。
+现在我们来讲讲如何配置我们下载的新主题！（内容可能不多不全，Hugo的使用还在摸索阶段）
+  下载主题前要先看主题的Demo，看是否是自己想要的。没有Demo示例给看那就clone下来后跑起来看看是不是中意的，但是有的clone到的主题有可能较精简，怎么办呢？往下看。
+  选好中意的主题了，那么就一定要看作者的配置介绍，这个配置介绍一般都是介绍如何配置config.toml，但这个介绍可能不够全，那么就要自己看clone下来的主题中这个文件夹exampleSite中的config.toml。有的主题还有full-config.toml,这个内容更全面。以我使用的主题为例，路径结构为：themes\hello-friend-ng\exampleSite\config.toml
+  接下来我将以我使用的主题为例，介绍config.toml配置内容
+[[menu.main]] identifier = &#34;blog&#34; name = &#34;Blogs&#34; url = &#34;/posts&#34; [[menu.main]] name = &#34;Categories&#34; identifier = &#34;categories&#34; url = &#34;/categories/&#34; [[menu.main]] identifier = &#34;tags&#34; name = &#34;Tags&#34; url = &#34;/tags/&#34; [[menu.main]] identifier = &#34;about&#34; name = &#34;About&#34; url = &#34;about/&#34; 有[[menu.main]]即配置导航菜单，对应的地方如图：
+[[params.social]] name = &#34;email&#34; url = &#34;mailto:untilthecore@gmail.com&#34; [[params.social]] name = &#34;github&#34; url = &#34;https://github.com/UntilTheCore&#34; 有[[params.social]]即配置图标链接，对应地方如图：
+baseurl = &#34;https://untilthecore.github.io/&#34; title = &#34;My Blog&#34; languageCode = &#34;zh-Hans&#34; theme = &#34;hello-friend-ng&#34;  baseurl：配置站点基址，如果要放在github上或者自己的云服务器上，请正确配置地址，否则出了能访问主页，其他地方都是 404 title：设置标题 languageCode：设置语言 theme：设置主题  其他的小地方的配置有注释，配合本地服务器可以方面查看修改后的效果。"/>
+
+
+
+    <meta property="og:title" content="正确使用hugo主题的姿势" />
+<meta property="og:description" content="在《如何用hugo搭建个人博客中》已经介绍了简单的主题引入办法，这里就不再赘述了。
+现在我们来讲讲如何配置我们下载的新主题！（内容可能不多不全，Hugo的使用还在摸索阶段）
+  下载主题前要先看主题的Demo，看是否是自己想要的。没有Demo示例给看那就clone下来后跑起来看看是不是中意的，但是有的clone到的主题有可能较精简，怎么办呢？往下看。
+  选好中意的主题了，那么就一定要看作者的配置介绍，这个配置介绍一般都是介绍如何配置config.toml，但这个介绍可能不够全，那么就要自己看clone下来的主题中这个文件夹exampleSite中的config.toml。有的主题还有full-config.toml,这个内容更全面。以我使用的主题为例，路径结构为：themes\hello-friend-ng\exampleSite\config.toml
+  接下来我将以我使用的主题为例，介绍config.toml配置内容
+[[menu.main]] identifier = &#34;blog&#34; name = &#34;Blogs&#34; url = &#34;/posts&#34; [[menu.main]] name = &#34;Categories&#34; identifier = &#34;categories&#34; url = &#34;/categories/&#34; [[menu.main]] identifier = &#34;tags&#34; name = &#34;Tags&#34; url = &#34;/tags/&#34; [[menu.main]] identifier = &#34;about&#34; name = &#34;About&#34; url = &#34;about/&#34; 有[[menu.main]]即配置导航菜单，对应的地方如图：
+[[params.social]] name = &#34;email&#34; url = &#34;mailto:untilthecore@gmail.com&#34; [[params.social]] name = &#34;github&#34; url = &#34;https://github.com/UntilTheCore&#34; 有[[params.social]]即配置图标链接，对应地方如图：
+baseurl = &#34;https://untilthecore.github.io/&#34; title = &#34;My Blog&#34; languageCode = &#34;zh-Hans&#34; theme = &#34;hello-friend-ng&#34;  baseurl：配置站点基址，如果要放在github上或者自己的云服务器上，请正确配置地址，否则出了能访问主页，其他地方都是 404 title：设置标题 languageCode：设置语言 theme：设置主题  其他的小地方的配置有注释，配合本地服务器可以方面查看修改后的效果。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://untilthecore.github.io/posts/%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8hugo%E4%B8%BB%E9%A2%98%E7%9A%84%E5%A7%BF%E5%8A%BF/" />
+<meta property="og:image" content="https://untilthecore.github.io/"/>
+<meta property="article:published_time" content="2020-04-27T22:28:15+08:00" />
+<meta property="article:modified_time" content="2020-04-27T22:28:15+08:00" />
+
+
+
+
+    <meta property="article:section" content="教程" />
+
+
+
+    <meta property="article:published_time" content="2020-04-27 22:28:15 &#43;0800 CST" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">UntilTheCore</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://untilthecore.github.io/about/">About</a></li><li><a href="https://untilthecore.github.io/posts">Blogs</a></li><li><a href="https://untilthecore.github.io/categories/">Categories</a></li><li><a href="https://untilthecore.github.io/tags/">Tags</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>One minute
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title">
+                <a href="https://untilthecore.github.io/posts/%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8hugo%E4%B8%BB%E9%A2%98%E7%9A%84%E5%A7%BF%E5%8A%BF/">正确使用hugo主题的姿势</a>
+            </h1>
+
+            
+
+            <div class="post-content">
+                <p>在《<a href="https://untilthecore.github.io/posts/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">如何用hugo搭建个人博客中</a>》已经介绍了简单的主题引入办法，这里就不再赘述了。</p>
+<p>现在我们来讲讲如何配置我们下载的新主题！（内容可能不多不全，Hugo的使用还在摸索阶段）</p>
+<ol>
+<li>
+<p>下载主题前要先看主题的Demo，看是否是自己想要的。没有Demo示例给看那就clone下来后跑起来看看是不是中意的，但是有的clone到的主题有可能较精简，怎么办呢？往下看。</p>
+</li>
+<li>
+<p>选好中意的主题了，那么就一定要看作者的配置介绍，这个配置介绍一般都是介绍如何配置<code>config.toml</code>，但这个介绍可能不够全，那么就要自己看clone下来的主题中这个文件夹<code>exampleSite</code>中的<code>config.toml</code>。有的主题还有<code>full-config.toml</code>,这个内容更全面。以我使用的主题为例，路径结构为：<code>themes\hello-friend-ng\exampleSite\config.toml</code></p>
+</li>
+<li>
+<p>接下来我将以<a href="https://themes.gohugo.io/hugo-theme-hello-friend-ng/">我使用的主题</a>为例，介绍<code>config.toml</code>配置内容</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"> <span style="color:#f92672">[[</span>menu.main<span style="color:#f92672">]]</span>
+   identifier <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;blog&#34;</span>
+   name       <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Blogs&#34;</span>
+   url        <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/posts&#34;</span>
+ <span style="color:#f92672">[[</span>menu.main<span style="color:#f92672">]]</span>
+   name       <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Categories&#34;</span>
+   identifier <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;categories&#34;</span>
+   url        <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/categories/&#34;</span>
+ <span style="color:#f92672">[[</span>menu.main<span style="color:#f92672">]]</span>
+   identifier <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;tags&#34;</span>
+   name       <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Tags&#34;</span>
+   url        <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/tags/&#34;</span>
+ <span style="color:#f92672">[[</span>menu.main<span style="color:#f92672">]]</span>
+   identifier <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;about&#34;</span>
+   name       <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;About&#34;</span>
+   url        <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;about/&#34;</span>
+</code></pre></div><p>有<code>[[menu.main]]</code>即配置导航菜单，对应的地方如图：</p>
+<p><img src="../../static/%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8hugo%E4%B8%BB%E9%A2%98%E7%9A%84%E5%A7%BF%E5%8A%BF/%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95%E5%9B%BE.png" alt="导航菜单图"></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[[</span>params.social<span style="color:#f92672">]]</span>
+name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;email&#34;</span>
+url  <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;mailto:untilthecore@gmail.com&#34;</span>
+
+<span style="color:#f92672">[[</span>params.social<span style="color:#f92672">]]</span>
+name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;github&#34;</span>
+url  <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://github.com/UntilTheCore&#34;</span>
+</code></pre></div><p>有<code>[[params.social]]</code>即配置图标链接，对应地方如图：</p>
+<p><img src="../../static/%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8hugo%E4%B8%BB%E9%A2%98%E7%9A%84%E5%A7%BF%E5%8A%BF/%E5%9B%BE%E6%A0%87%E9%93%BE%E6%8E%A5.jpg" alt="图标链接图"></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">baseurl      <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://untilthecore.github.io/&#34;</span>
+title        <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;My Blog&#34;</span>
+languageCode <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;zh-Hans&#34;</span>
+theme        <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hello-friend-ng&#34;</span>
+</code></pre></div><ul>
+<li>baseurl：配置站点基址，如果要放在github上或者自己的云服务器上，请正确配置地址，否则出了能访问主页，其他地方都是 404</li>
+<li>title：设置标题</li>
+<li>languageCode：设置语言</li>
+<li>theme：设置主题</li>
+</ul>
+<p>其他的小地方的配置有注释，配合本地服务器可以方面查看修改后的效果。</p>
+</li>
+<li>
+<p>第一次使用时，可能会好奇我们的 <code>.md</code> 文件是怎么产生标签（Tags）和分类（Categories）的？这就是通过使用<code>hugo new posts/xxxxxx.md</code>创建博客文件时，hugo自动为我们在文件头部生成了这些内容：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">title: <span style="color:#e6db74">&#34;正确使用hugo主题的姿势&#34;</span>
+date: 2020-04-27T22:28:15+08:00
+draft: false
+tags: <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;Hugo&#34;</span><span style="color:#f92672">]</span>
+categories: <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;教程&#34;</span><span style="color:#f92672">]</span>
+</code></pre></div><ul>
+<li>title：文章标题；</li>
+<li>data：文章被创建的事件</li>
+<li>draft：是否草稿内容，如果为true，将不显示在博客站点中。</li>
+<li>tags：为这篇文章创建标签，是数组形式<code>[&quot;1&quot;,&quot;2&quot;,&quot;3&quot;]</code></li>
+<li>categories：为这篇文章创建分类，是数组形式<code>[&quot;1&quot;,&quot;2&quot;,&quot;3&quot;]</code></li>
+</ul>
+<p>由于在文章这里设置了<code>tags</code>和<code>categories</code>,所以我们可以在导航菜单中看到标签和文章分类信息。</p>
+</li>
+</ol>
+<p>在<code>.md</code>文件中，还可以设置更多其他的内容，比如设置版权信息等。有需要的话可以自行了解，我的经验就是多下几个主题，看看这些作者是怎么配置的。如果你有更多更好的信息，欢迎来信告诉我</p>
+<p>创建博客后如何配置主题的基础内容介绍完毕，配置好这些就可以愉快地写博客啦！如果想配置更多更强大的内容，可以多多翻看<a href="https://gohugo.io/documentation/">Hugo官方文档</a></p>
+<p>文章有误或不足之处，欢迎指正！谢谢！</p>
+<h3 id="本文由untilthecore原创转载请说明作者和出处">本文由UntilTheCore原创，转载请说明作者和出处！</h3>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://untilthecore.github.io/tags/hugo">Hugo</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>105 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-04-27 22:28 &#43;0800</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h"></span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+
+                    
+                        <span class="button next">
+                            <a href="https://untilthecore.github.io/posts/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
+                                <span class="button__text">使用hugo搭建个人博客</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+            <span></span>
+            <span> <a href="https://untilthecore.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.4a69500057d68129e88f497d354afe68422eb56de6d15e45dbe2190858ea5a76bfcb096406f992984b241db45f47388ac57ab0376e3b32125bef7a8a6d0f06c4.js" integrity="sha512-SmlQAFfWgSnoj0l9NUr&#43;aEIutW3m0V5F2&#43;IZCFjqWna/ywlkBvmSmEskHbRfRziKxXqwN247MhJb73qKbQ8GxA=="></script>
+
+
+
+    </body>
+</html>
