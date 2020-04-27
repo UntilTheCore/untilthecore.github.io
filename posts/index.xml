@@ -91,7 +91,13 @@ categories: <span style="color:#f92672">[</span><span style="color:#e6db74">&#34
 </li>
 </ol>
 <p>在<code>.md</code>文件中，还可以设置更多其他的内容，比如设置版权信息等。有需要的话可以自行了解，我的经验就是多下几个主题，看看这些作者是怎么配置的。如果你有更多更好的信息，欢迎来信告诉我</p>
-<p>创建博客后如何配置主题的基础内容介绍完毕，配置好这些就可以愉快地写博客啦！如果想配置更多更强大的内容，可以多多翻看<a href="https://gohugo.io/documentation/">Hugo官方文档</a></p>
+<p>创建博客后如何配置主题的基础内容介绍完毕，配置好这些就可以愉快地写博客啦！如果想配置更多更强大的内容，可以多多翻看<a href="https://gohugo.io/documentation/">Hugo官方文档</a>。</p>
+<h4 id="写博客时要注意的点">写博客时要注意的点：</h4>
+<p>可能在posts中使用MarkDown插入图片时好好的，但是上传到github上后图片就不显示了呢？这是由于我们写文章时是在站点生成器的环境中，而上传的代码是在public中，为了保证上传后依然能正确显示，我使用的技巧是在public文件夹中新建一个static的文件夹用来保存我们文章的图片，且每一文章有对应的文件夹去保存图片，如图：</p>
+<p><img src="../../static/%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8hugo%E4%B8%BB%E9%A2%98%E7%9A%84%E5%A7%BF%E5%8A%BF/%E6%96%87%E7%AB%A0%E5%9B%BE%E7%89%87%E7%9A%84%E4%BF%9D%E5%AD%98%E6%96%B9%E5%BC%8F.jpg" alt="文章图片的保存方式"></p>
+<p>鉴于此，我们在<code>posts/</code>下写文章时使用的图片地址要以<code>public/posts/文章标题/index.html</code>为基准来找到<code>public\static</code>目录。一段示例：</p>
+<pre><code>../../static/正确使用hugo主题的姿势/文章图片的保存方式.jpg
+</code></pre>
 <p>文章有误或不足之处，欢迎指正！谢谢！</p>
 <h3 id="本文由untilthecore原创转载请说明作者和出处">本文由UntilTheCore原创，转载请说明作者和出处！</h3>
 ]]></content>
