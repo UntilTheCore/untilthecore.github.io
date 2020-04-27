@@ -1,16 +1,64 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-	
-	<sitemap>
-	   	<loc>https://untilthecore.github.io/en/sitemap.xml</loc>
-		
-	   	<lastmod>2020-04-27T22:28:15+08:00</lastmod>
-		
-	</sitemap>
-	
-	<sitemap>
-	   	<loc>https://untilthecore.github.io/zh/sitemap.xml</loc>
-		
-	</sitemap>
-	
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://untilthecore.github.io/categories/</loc>
+    <lastmod>2020-04-27T22:28:15+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://untilthecore.github.io/tags/hugo/</loc>
+    <lastmod>2020-04-27T22:28:15+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://untilthecore.github.io/posts/</loc>
+    <lastmod>2020-04-27T22:28:15+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://untilthecore.github.io/tags/</loc>
+    <lastmod>2020-04-27T22:28:15+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://untilthecore.github.io/</loc>
+    <lastmod>2020-04-27T22:28:15+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://untilthecore.github.io/categories/%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2020-04-27T22:28:15+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://untilthecore.github.io/posts/%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8hugo%E4%B8%BB%E9%A2%98%E7%9A%84%E5%A7%BF%E5%8A%BF/</loc>
+    <lastmod>2020-04-27T22:28:15+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://untilthecore.github.io/tags/git/</loc>
+    <lastmod>2020-04-27T13:06:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://untilthecore.github.io/tags/markdown/</loc>
+    <lastmod>2020-04-27T13:06:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://untilthecore.github.io/posts/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2020-04-27T13:06:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://untilthecore.github.io/about/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://untilthecore.github.io/series/</loc>
+  </url>
+  
+</urlset>
