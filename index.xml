@@ -18,10 +18,10 @@
       <pubDate>Tue, 28 Apr 2020 18:12:06 +0800</pubDate>
       
       <guid>https://untilthecore.github.io/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</guid>
-      <description>1.HTML是怎么产生的？  Tim Berners-Lee &amp;ndash; 万维网的创建者  探寻互联网的初始，那么就必然要了解一下李老爷子本人，这位牛人为如今精彩纷呈的互联网世界打下了坚实的地基。1989年他开发了世上第一个浏览器和第一个服务器，由此种下了互联网世界的种子，而且他发明的WWW、URL、HTTP一直延续至今。
-那这个东西到底是怎么产生的呢？1、因为一杯咖啡，这让我联想到了java；2、为了可以上网冲浪；
-2.HTML怎么快速开始 现代的编辑器配合Emmet语法可以快速创建一个HTML的骨架，虽然这节省了我们书写骨架代码的时间，但还是有必要了解一下这些内容是什么。 在vscode中创建一个HTML的文件，使用Emmet语法输入! + tab键即可快速生成html骨架。
-3.HTML常用的章节标签有哪些？    章节标签 介绍     h1~h6 文章内容标题   section 相对于article元素更加广泛，每个区块都可以使用，比如页面里的导航菜单、文章正文、文章的评论等。   article 代表文档、页面或应用程序中独立的、完整的、可以独自被外部引用的内容。它可以是一篇博客、一篇帖子、一段用户评论   p 段落   header 头部   footer 页脚   main 主要内容。内容主体区域，放在在header和footer中间   aside 旁支内容   div 划分    4.HTML常用的内容标签有哪些？    内容标签 介绍     ol + li ordered list + list item。无序列表   ul + li unordered list + list item。有序列表   dl+ dd + dt description list + term + data。自定义列表   pre 被 pre 包裹的内容以原始内容输出。比如内容有多个空格以及换行都正常显示   hr 分隔线   br 换行   a 超链接标签   em 语气上强调   strong 表示内容重要   code 内容字体等宽。一般包裹代码块   quote 引用。行内引用   blockquote 块级引用。被包裹的内容与上一行内容有一个缩进    5.</description>
+      <description>1.HTML 是怎么产生的？  Tim Berners-Lee &amp;ndash; 万维网的创建者  探寻互联网的初始，那么就必然要了解一下李老爷子本人，这位牛人为如今精彩纷呈的互联网世界打下了坚实的地基。1989 年他开发了世上第一个浏览器和第一个服务器，由此种下了互联网世界的种子，而且他发明的 WWW、URL、HTTP 一直延续至今。
+那这个东西到底是怎么产生的呢？1、因为一杯咖啡，这让我联想到了 java；2、为了可以上网冲浪；
+2.HTML 怎么快速开始 现代的编辑器配合 Emmet 语法可以快速创建一个 HTML 的骨架，虽然这节省了我们书写骨架代码的时间，但还是有必要了解一下这些内容是什么。 在 vscode 中创建一个 HTML 的文件，使用 Emmet 语法输入! + tab键即可快速生成 html 骨架。
+3.HTML 常用的章节标签有哪些？    章节标签 介绍     h1~h6 文章内容标题   section 相对于 article 元素更加广泛，每个区块都可以使用，比如页面里的导航菜单、文章正文、文章的评论等。   article 代表文档、页面或应用程序中独立的、完整的、可以独自被外部引用的内容。它可以是一篇博客、一篇帖子、一段用户评论   p 段落   header 头部   footer 页脚   main 主要内容。内容主体区域，放在在 header 和 footer 中间   aside 旁支内容   div 划分    4.</description>
     </item>
     
     <item>
