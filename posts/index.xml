@@ -56,7 +56,13 @@
 <h3 id="属性-href-">属性[ href ]</h3>
 <p><code>[href]</code>可设置以下内容的值：</p>
 <ul>
-<li>网址 - <a href="https://untilthecore.github.io/">https://untilthecore.github.io/</a> - <a href="https://untilthecore.github.io/">http://untilthecore.github.io/</a> - <a href="https://untilthecore.github.io/">//untilthecore.github.io/</a> (推荐用这种，它会自动寻找 https 或者 http 协议的网址)</li>
+<li>网址
+<ul>
+<li><a href="https://untilthecore.github.io/">https://untilthecore.github.io/</a></li>
+<li><a href="https://untilthecore.github.io/">http://untilthecore.github.io/</a></li>
+<li><a href="https://untilthecore.github.io/">//untilthecore.github.io/</a> (推荐用这种，它会自动寻找 https 或者 http 协议的网址)</li>
+</ul>
+</li>
 <li>路径 - 绝对路径：/a/b/c （以地址栏地址为基准寻找） - 相对路径：a/b/c 、 ./a/b/c (以当前文件为基准寻找)</li>
 <li>伪协议 - <code>&quot;javascript:代码;&quot;</code>：代码部分可以写代码，这样点击会产生对应代码的效果。或者什么都不写，就是单纯的<code>&quot;javascript:;&quot;</code>，这样可以阻止 a 标签的默认跳转行为。 ； - <code>&quot;mailto:邮箱地址&quot;</code>：值为这个，点击时会调用默认邮件程序，可以发送邮件到填写的邮箱地址； - <code>&quot;tel:手机号&quot;</code>：值为这个，如果是手机端会调用手机默认拨号程序并准备拨向填写的手机号；</li>
 <li>id
