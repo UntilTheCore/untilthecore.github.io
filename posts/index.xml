@@ -6,8 +6,199 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-Hans</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Tue, 28 Apr 2020 18:12:06 +0800</lastBuildDate>
+        <lastBuildDate>Wed, 29 Apr 2020 11:00:02 +0800</lastBuildDate>
         <atom:link href="https://untilthecore.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>HTML入门之HTML常用标签</title>
+            <link>https://untilthecore.github.io/posts/html%E5%85%A5%E9%97%A8%E4%B9%8Bhtml%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
+            <pubDate>Wed, 29 Apr 2020 11:00:02 +0800</pubDate>
+            
+            <guid>https://untilthecore.github.io/posts/html%E5%85%A5%E9%97%A8%E4%B9%8Bhtml%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
+            <description>标签 常用属性 作用     a href \ target 1、跳转外部页面；2、跳转内部锚点；3、跳转到邮箱或电话   img src \ alt \ width \ height 发出 get 请求，展示一张图片   form action \ method 表单。发送 get 或 post 请求，然后刷新页面   input type [ &amp;ldquo;text&amp;rdquo; , &amp;ldquo;password&amp;rdquo; , &amp;ldquo;file&amp;rdquo;，&amp;ldquo;submit&amp;rdquo;，&amp;ldquo;hidden&amp;quot;等 ] \ checked \ value \ disabled \ name 让用户输入内容。通过 type 确定不同的 input 内容，通常搭配 form 使用   table - 表格。使用相对较少    1.</description>
+            <content type="html"><![CDATA[<table>
+<thead>
+<tr>
+<th>标签</th>
+<th>常用属性</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a">a</a></td>
+<td>href \ target</td>
+<td>1、跳转外部页面；2、跳转内部锚点；3、跳转到邮箱或电话</td>
+</tr>
+<tr>
+<td><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img">img</a></td>
+<td>src \ alt \ width \ height</td>
+<td>发出 get 请求，展示一张图片</td>
+</tr>
+<tr>
+<td><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/form">form</a></td>
+<td>action \ method</td>
+<td>表单。发送 get 或 post 请求，然后刷新页面</td>
+</tr>
+<tr>
+<td><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/input">input</a></td>
+<td>type [ &ldquo;text&rdquo; , &ldquo;password&rdquo; , &ldquo;file&rdquo;，&ldquo;submit&rdquo;，&ldquo;hidden&quot;等 ] \ checked \ value \ disabled \ name</td>
+<td>让用户输入内容。通过 type 确定不同的 input 内容，通常搭配 form 使用</td>
+</tr>
+<tr>
+<td><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/table">table</a></td>
+<td>-</td>
+<td>表格。使用相对较少</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-a-标签">1. a 标签</h2>
+<h3 id="属性-href-">属性[ href ]</h3>
+<p><code>[href]</code>可设置以下内容的值：</p>
+<ul>
+<li>网址 - <a href="https://untilthecore.github.io/">https://untilthecore.github.io/</a> - <a href="https://untilthecore.github.io/">http://untilthecore.github.io/</a> - <a href="https://untilthecore.github.io/">//untilthecore.github.io/</a> (推荐用这种，它会自动寻找 https 或者 http 协议的网址)</li>
+<li>路径 - 绝对路径：/a/b/c （以地址栏地址为基准寻找） - 相对路径：a/b/c 、 ./a/b/c (以当前文件为基准寻找)</li>
+<li>伪协议 - <code>&quot;javascript:代码;&quot;</code>：代码部分可以写代码，这样点击会产生对应代码的效果。或者什么都不写，就是单纯的<code>&quot;javascript:;&quot;</code>，这样可以阻止 a 标签的默认跳转行为。 ； - <code>&quot;mailto:邮箱地址&quot;</code>：值为这个，点击时会调用默认邮件程序，可以发送邮件到填写的邮箱地址； - <code>&quot;tel:手机号&quot;</code>：值为这个，如果是手机端会调用手机默认拨号程序并准备拨向填写的手机号；</li>
+<li>id
+锚点。如果 a 标签的 href 属性值为某个元素的 id 值，点击时会跳到这个元素的位置。举个例子：</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!-- 忽略HTML骨架 --&gt;</span>
+<span style="color:#75715e">&lt;!-- 假如有一个元素p，且 id 为 aaa --&gt;</span>
+&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;aaa&#34;</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;
+<span style="color:#75715e">&lt;!-- 假如有一个 a 标签，它的 href=&#34;#aaa&#34;,且这个 a 标签离 上述 p 间隔100个p标签的距离 --&gt;</span>
+&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#aaa&#34;</span>&gt;跳向aaa&lt;/<span style="color:#f92672">a</span>&gt;
+</code></pre></div><p>注：href 可以不设置值，但是点击时会造成页面刷新，有可能有的小伙伴认为可以填写上<code>&quot;#&quot;</code>来避免刷新，但是使用这种方式虽然不刷新，但是如果页面很高，而且这个 a 标签在很下面，会导致页面回到顶部。为了既防止页面刷新又防止回到页面顶部，可以使用<code>&quot;javascript:;&quot;</code></p>
+<h3 id="属性-target-">属性[ target ]</h3>
+<p><code>&quot;[target]&quot;</code>可以设置以下内容的值：</p>
+<ul>
+<li>&ldquo;_blank&rdquo;：打开链接到一个新的浏览器标签页上。</li>
+<li>&ldquo;self&rdquo;：默认值。打开链接在当前页面上。</li>
+<li>&ldquo;_top&rdquo;：打开链接到最顶级的页面，通常和 iframe 使用。不过 iframe 不怎么用了，仅做了解。</li>
+<li>&ldquo;parent&rdquo;：打开链接到父级页面，通常和 iframe 使用。比如 html &gt; iframe a &gt; iframe b，iframe b 中 a 的 target 设置为 parent，那么打开链接时会在 iframe a 中打开。同上，仅做了解。</li>
+</ul>
+<h2 id="2-img-标签">2. img 标签</h2>
+<h3 id="属性-src-">属性[ src ]</h3>
+<p><code>&quot;[src]&quot;</code>值为图片的地址，可以使网上图片的超链接，也可以是本地的图片路径。</p>
+<h3 id="属性-alt-">属性[ alt ]</h3>
+<p><code>&quot;[alt]&quot;</code>的值为一段关于图片的描述，在图片加载失败或者网速过慢还没有加载出来时显示给用户看的内容。</p>
+<h3 id="属性-width--height-">属性[ width \ height ]</h3>
+<p><code>&quot;[width] 和 [height]&quot;</code>：设置图片的宽和高。</p>
+<h3 id="事件-onload-">事件[ onload ]</h3>
+<p><code>&quot;[onload]&quot;</code>：在图片加载完成后触发的事件</p>
+<h3 id="事件-onerror">事件[ onerror]</h3>
+<p><code>&quot;[onerror]&quot;</code>：在图片加载失败后触发的事件。应用场景：比如用户访问某个图片失败了，通过这个事件可以替换 img 的 src 为一张默认图给用户看，用来保证一些用户体验性。</p>
+<h3 id="响应式">响应式</h3>
+<p><code>&quot;[max-width]&quot;</code>：为了保持图片在不同设备上显示效果一致，可以在 css 中设置 img 的<code>max-width</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">style</span>&gt;
+  <span style="color:#f92672">img</span> {
+    <span style="color:#66d9ef">max-width</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+  }
+&lt;/<span style="color:#f92672">style</span>&gt;
+</code></pre></div><p>而为什么要使用<code>&quot;max-width&quot;</code>而不是<code>&quot;width&quot;</code>呢？最重要的概念是<strong>保证图片不被拉伸</strong>，使用<code>&quot;max-width&quot;</code>可以保证图片小于屏幕宽度的时候不被拉伸到和屏幕一样宽，只到自己图片大小，从而避免造成看起来非常马赛克。如果还是不太明白可以写代码来帮助理解。</p>
+<h2 id="3form-标签">3.form 标签</h2>
+<h3 id="属性-action-">属性[ action ]</h3>
+<p><code>&quot;[action]&quot;</code>：一个处理此表单信息的程序所在的 URL。</p>
+<h3 id="属性-method-">属性[ method ]</h3>
+<p><code>&quot;[method ]&quot;</code>：表单的提交方式，值有：</p>
+<ul>
+<li>post：表单数据会包含在表单体内然后发送给服务器。</li>
+<li>get：表单数据会附加在 action 属性的 URI 中，并以 &lsquo;?&rsquo; 作为分隔符，然后这样得到的 URI 再发送给服务器。如果要发送用户的账号密码等个人信息，请使用 post 方式。</li>
+</ul>
+<h3 id="事件-onsubmit">事件 [onsubmit]</h3>
+<p>表单提交时会触发 onsubmit 事件，有时候不想要表单默认的提交行为，我们可以给表单添加 id 然后通过 js 捕获 submit 事件并在事件处理函数中 return false 来阻止默认提交行为。</p>
+<h2 id="4input-标签">4.input 标签</h2>
+<h3 id="属性-type-">属性[ type ]</h3>
+<p><code>&quot;[input]&quot;</code>的 type 属性不同值可以产生各式各样的 input 内容，比如单选框 radio 、复选框 checkbox、颜色选择面板 color 等，大多数的类型值都是比较好理解的，但是这个 <code>&quot;hidden&quot;</code> 是个什么意思且具体用法是什么对于初学者来说有点懵。
+为什么要有一个 type 属性值是<code>&quot;hidden&quot;</code>呢？这是因为有时候用户查询得到的数据返回时在地址栏上，而且这次查询得到的数据还要继续用来下一次查询，这时总不可能让用户自己去复制粘贴地址栏上的参数数据吧？所以为了避免这种情况，就需要<code>&quot;hidden&quot;</code>上场了。我们可以在需要用来保存上一次查询结果的地方增加一个<code>&lt;input type=&quot;hidden&quot; value=&quot;&quot;&gt;</code>在我们得到返回结果后通过 js 将结果设置到这个 input 的 value 上，这样在我们下一次需要的时候就可以直接通过 value 去取到这个值了。
+这种操作表单的方式被称作：<code>隐藏域</code></p>
+<h3 id="属性-name-">属性[ name ]</h3>
+<p><code>&quot;[name]&quot;</code>属性作用有这些：</p>
+<ul>
+<li>给 radio 和 checkbox 归类；</li>
+<li>表单提交时传给后台的表单项的名字，它与属性 <code>&quot;value&quot;</code>组成键值对发送到后端，<code>&quot;name&quot;</code>是键。</li>
+</ul>
+<h3 id="属性-value-">属性[ value ]</h3>
+<p><code>&quot;[value]&quot;</code>属性与<code>&quot;name&quot;</code>属性组成键值对发送到后端，<code>value</code>是值。</p>
+<h3 id="事件-onchange-">事件[ onchange ]</h3>
+<p><code>&quot;[onchange]&quot;</code>：input 内容发生改变时触发的事件，比如类型为 text 的 input 有输入产生、类型为 select 的 input 选中了某个选项等。</p>
+<h3 id="事件-onfocus">事件[ onfocus]</h3>
+<p><code>&quot;[onfocus]&quot;</code>：input 产生焦点时触发的事件。比如有一个类型为 text 的 input，我们鼠标点击了这个 input 时产生<code>&quot;onfocus&quot;</code>事件。</p>
+<h3 id="事件-onblur-">事件[ onblur ]</h3>
+<p><code>&quot;[onblur ]&quot;</code>：input 失去焦点时触发的事件。比如一个类型为 text 的 input，内容输入完成后鼠标点击了非这个 input 区域时产生<code>&quot;onblur&quot;</code>事件。</p>
+<h2 id="5table-标签">5.table 标签</h2>
+<p><code>&quot;[table]&quot;</code>内容比较简单，主要就是练习一个熟练度。table 本身用的地方不是很多，但可以用来进行一些比较特殊表格布局。
+使用<code>table</code>注意的点：</p>
+<ul>
+<li>使用 css 设置<code>border-collapse:collapse</code>和<code>border-spacing: 0</code>，这样可以清除表格默认样式，使表格更好看。</li>
+<li>不要在标签上设置表格样式，请在 css 中设置 table 的样式，这是官方说的。</li>
+</ul>
+<h3 id="熟能生巧">熟能生巧</h3>
+<p><a href="https://codepen.io/untilthecore/pen/zYvzgyB">一个简单表格的练习</a></p>
+<p>打不开就看这里吧：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
+  &lt;<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span> /&gt;
+    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0&#34;</span> /&gt;
+    &lt;<span style="color:#f92672">title</span>&gt;Document&lt;/<span style="color:#f92672">title</span>&gt;
+    &lt;<span style="color:#f92672">style</span>&gt;
+      <span style="color:#f92672">th</span><span style="color:#f92672">,</span>
+      <span style="color:#f92672">td</span> {
+        <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#ccc</span>;
+        <span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">center</span>;
+      }
+      <span style="color:#f92672">table</span> {
+        <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">300</span><span style="color:#66d9ef">px</span>;
+        <span style="color:#75715e">/* 设置单元格距离和单元格边框合并 */</span>
+        <span style="color:#66d9ef">border-collapse</span>: <span style="color:#66d9ef">collapse</span>;
+        <span style="color:#66d9ef">border-spacing</span>: <span style="color:#ae81ff">0</span>;
+      }
+    &lt;/<span style="color:#f92672">style</span>&gt;
+  &lt;/<span style="color:#f92672">head</span>&gt;
+  &lt;<span style="color:#f92672">body</span>&gt;
+    &lt;<span style="color:#f92672">table</span>&gt;
+      &lt;<span style="color:#f92672">thead</span>&gt;
+        &lt;<span style="color:#f92672">tr</span>&gt;
+          &lt;<span style="color:#f92672">th</span>&gt;&lt;/<span style="color:#f92672">th</span>&gt;
+          &lt;<span style="color:#f92672">th</span>&gt;价格&lt;/<span style="color:#f92672">th</span>&gt;
+          &lt;<span style="color:#f92672">th</span>&gt;分类&lt;/<span style="color:#f92672">th</span>&gt;
+          &lt;<span style="color:#f92672">th</span>&gt;日期&lt;/<span style="color:#f92672">th</span>&gt;
+        &lt;/<span style="color:#f92672">tr</span>&gt;
+      &lt;/<span style="color:#f92672">thead</span>&gt;
+      &lt;<span style="color:#f92672">tbody</span>&gt;
+        &lt;<span style="color:#f92672">tr</span>&gt;
+          &lt;<span style="color:#f92672">th</span>&gt;商品1&lt;/<span style="color:#f92672">th</span>&gt;
+          &lt;<span style="color:#f92672">td</span>&gt;100&lt;/<span style="color:#f92672">td</span>&gt;
+          &lt;<span style="color:#f92672">td</span>&gt;分类1&lt;/<span style="color:#f92672">td</span>&gt;
+          &lt;<span style="color:#f92672">td</span>&gt;2020-4-29&lt;/<span style="color:#f92672">td</span>&gt;
+        &lt;/<span style="color:#f92672">tr</span>&gt;
+        &lt;<span style="color:#f92672">tr</span>&gt;
+          &lt;<span style="color:#f92672">th</span>&gt;商品2&lt;/<span style="color:#f92672">th</span>&gt;
+          &lt;<span style="color:#f92672">td</span>&gt;100&lt;/<span style="color:#f92672">td</span>&gt;
+          &lt;<span style="color:#f92672">td</span>&gt;分类2&lt;/<span style="color:#f92672">td</span>&gt;
+          &lt;<span style="color:#f92672">td</span>&gt;2020-4-29&lt;/<span style="color:#f92672">td</span>&gt;
+        &lt;/<span style="color:#f92672">tr</span>&gt;
+        &lt;<span style="color:#f92672">tr</span>&gt;
+          &lt;<span style="color:#f92672">th</span>&gt;商品3&lt;/<span style="color:#f92672">th</span>&gt;
+          &lt;<span style="color:#f92672">td</span>&gt;100&lt;/<span style="color:#f92672">td</span>&gt;
+          &lt;<span style="color:#f92672">td</span>&gt;分类3&lt;/<span style="color:#f92672">td</span>&gt;
+          &lt;<span style="color:#f92672">td</span>&gt;2020-4-29&lt;/<span style="color:#f92672">td</span>&gt;
+        &lt;/<span style="color:#f92672">tr</span>&gt;
+      &lt;/<span style="color:#f92672">tbody</span>&gt;
+      &lt;<span style="color:#f92672">tfoot</span>&gt;
+        &lt;<span style="color:#f92672">tr</span>&gt;
+          &lt;<span style="color:#f92672">th</span>&gt;价格总计&lt;/<span style="color:#f92672">th</span>&gt;
+          <span style="color:#75715e">&lt;!-- colspan 让这一列占 3 列的宽度 --&gt;</span>
+          &lt;<span style="color:#f92672">td</span> <span style="color:#a6e22e">colspan</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;3&#34;</span>&gt;300&lt;/<span style="color:#f92672">td</span>&gt;
+        &lt;/<span style="color:#f92672">tr</span>&gt;
+      &lt;/<span style="color:#f92672">tfoot</span>&gt;
+    &lt;/<span style="color:#f92672">table</span>&gt;
+  &lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;
+</code></pre></div><p>学习使人充盈，分享使人进步！</p>
+<p>此文为 UntilTheCore 原创，转载请说明作者和出处！</p>
+]]></content>
+        </item>
         
         <item>
             <title>HTML入门笔记1</title>

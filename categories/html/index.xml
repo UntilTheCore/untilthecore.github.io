@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 28 Apr 2020 18:12:06 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2020 11:00:02 +0800</lastBuildDate>
     
 	<atom:link href="https://untilthecore.github.io/categories/html/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HTML入门之HTML常用标签</title>
+      <link>https://untilthecore.github.io/posts/html%E5%85%A5%E9%97%A8%E4%B9%8Bhtml%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
+      <pubDate>Wed, 29 Apr 2020 11:00:02 +0800</pubDate>
+      
+      <guid>https://untilthecore.github.io/posts/html%E5%85%A5%E9%97%A8%E4%B9%8Bhtml%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
+      <description>标签 常用属性 作用     a href \ target 1、跳转外部页面；2、跳转内部锚点；3、跳转到邮箱或电话   img src \ alt \ width \ height 发出 get 请求，展示一张图片   form action \ method 表单。发送 get 或 post 请求，然后刷新页面   input type [ &amp;ldquo;text&amp;rdquo; , &amp;ldquo;password&amp;rdquo; , &amp;ldquo;file&amp;rdquo;，&amp;ldquo;submit&amp;rdquo;，&amp;ldquo;hidden&amp;quot;等 ] \ checked \ value \ disabled \ name 让用户输入内容。通过 type 确定不同的 input 内容，通常搭配 form 使用   table - 表格。使用相对较少    1.</description>
+    </item>
     
     <item>
       <title>HTML入门笔记1</title>
