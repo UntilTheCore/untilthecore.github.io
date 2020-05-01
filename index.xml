@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 29 Apr 2020 11:00:02 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2020 14:59:14 +0800</lastBuildDate>
     
 	<atom:link href="https://untilthecore.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CSS应知应会</title>
+      <link>https://untilthecore.github.io/posts/css%E5%BA%94%E7%9F%A5%E5%BA%94%E4%BC%9A/</link>
+      <pubDate>Fri, 01 May 2020 14:59:14 +0800</pubDate>
+      
+      <guid>https://untilthecore.github.io/posts/css%E5%BA%94%E7%9F%A5%E5%BA%94%E4%BC%9A/</guid>
+      <description>css应知应会</description>
+    </item>
     
     <item>
       <title>HTML入门之HTML常用标签</title>
@@ -74,7 +83,7 @@ baseurl = &amp;#34;https://untilthecore.github.io/&amp;#34; title = &amp;#34;My 
       <guid>https://untilthecore.github.io/about/</guid>
       <description>About me 才疏学浅，一个平凡的编码者。
 欢迎访问我的github
-欢迎访问我的CSDN
+欢迎访问我的语雀
 欢迎访问我的掘金</description>
     </item>
     
