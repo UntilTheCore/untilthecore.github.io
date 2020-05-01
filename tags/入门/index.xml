@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 01 May 2020 14:59:14 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2020 15:15:09 +0800</lastBuildDate>
     
 	<atom:link href="https://untilthecore.github.io/tags/%E5%85%A5%E9%97%A8/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CSS布局</title>
+      <link>https://untilthecore.github.io/posts/css%E5%B8%83%E5%B1%80/</link>
+      <pubDate>Fri, 01 May 2020 15:15:09 +0800</pubDate>
+      
+      <guid>https://untilthecore.github.io/posts/css%E5%B8%83%E5%B1%80/</guid>
+      <description>float布局 常见问题 原理：在父盒子浮动元素的最后加上一个盒子，并给这个盒子设置属性&amp;quot;clear:both&amp;rdquo;，这样就可以实现最基础的清除浮动了。 但是这样有个缺点，就是总要去手动增加一个html元素，然后为这个元素设置css样式，太麻烦。什么方式可以避免呢？那就是使用css伪元素。对css伪元素不太了解的话，可以看这里。 使用伪元素的方式清除浮动，则只需要为浮动盒子的父盒子添加一个类样式。类样式代码如下：
+/* 不兼容ie低版本 */ .clearfix { content:&amp;#34;&amp;#34;; display:block; clear:both; } /* 兼容ie低版本 */ /* after伪元素清除法 */ .clearfix:after { content: &amp;#34;&amp;#34;; display: block; height: 0; clear: both; visibility: hidden; } .clearfix: { *zoom: 1; /*为i6/i7老式浏览器准备*/ } /* 双伪元素清除法 */ .clearfix:before, .clearfix:after { content: &amp;#34;&amp;#34;; display: table; } .clearfix:after { clear: both; } .clearfix: { *zoom: 1; /*为i6/i7老式浏览器准备*/ } 2. 图片logo与底部边框有间隙 给img标签添设置属性&amp;quot;vertical-align: middle;&amp;ldquo;值可以是这个属性的其他值。
+3. 边框影响了布局 将border属性改为使用outline属性。同样都可以显示边框，但outline不影响布局。
+4. 块元素居中显示 在pc上布局时，有时候要对一个固定宽度的块元素设置居中显示，可以使用&amp;quot;margin:0 auto;&amp;ldquo;的方式，但是这并不好，因为假如这个要居中显示的元素就需要一个上外边距，那么使用&amp;quot;margin:0 auto;&amp;ldquo;会破坏布局。比较好的方式是为元素设置以下两种属性：</description>
+    </item>
     
     <item>
       <title>CSS应知应会</title>
@@ -18,7 +30,7 @@
       <pubDate>Fri, 01 May 2020 14:59:14 +0800</pubDate>
       
       <guid>https://untilthecore.github.io/posts/css%E5%BA%94%E7%9F%A5%E5%BA%94%E4%BC%9A/</guid>
-      <description>css应知应会</description>
+      <description></description>
     </item>
     
     <item>
