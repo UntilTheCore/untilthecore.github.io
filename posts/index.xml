@@ -6,8 +6,136 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-Hans</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Wed, 06 May 2020 18:34:04 +0800</lastBuildDate>
+        <lastBuildDate>Mon, 01 Jun 2020 23:11:21 +0800</lastBuildDate>
         <atom:link href="https://untilthecore.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>JavaScript初识</title>
+            <link>https://untilthecore.github.io/posts/javascript%E5%88%9D%E8%AF%86/</link>
+            <pubDate>Mon, 01 Jun 2020 23:11:21 +0800</pubDate>
+            
+            <guid>https://untilthecore.github.io/posts/javascript%E5%88%9D%E8%AF%86/</guid>
+            <description>初学 JavaScript 要掌握的知识有哪些呢？
+1.表达式和语句 表达式： 一个式子，它具有表达某些信息的能力。比如1+2表达式的值为 3。需要注意的地方，console.log表达式的值为函数本身，但是console.log(1)表达式的值为 undefined，只是在控制台中显示的内容为 1。
+语句： 描述一段内容的句子。比如var a = 1
+它们两者的区别在于：
+ 表达式一般都有值，语句可能有也可能没有。 语句一般会改变环境，比如声明或者赋值。  但这些都不绝对，特殊情况特殊看待。
+2. 标识符的规则 在对变量名等标识符命名的时候并非随心所欲随便命名的，要遵守一定的约定规则。首先 JavaScript 是对大小写敏感的，a和A会被严格区分，所以有时候在函数命名上要小心避免上下文名称不同造成的意外错误。
+标识符第一个字符命名规则：
+ 不能是数字； 可以是 Unicode 字符或$、_和中文；  标识符第二个及以后的字符命名规则：
+ 可以为任意字符；  注：标识符的命名要好认、好记通俗易懂。不要写很多个_或是使用.这种比较特殊的字符。标识符要写时好写，后面 review 时要好懂才行。
+3.条件判断语句 &amp;ldquo;if&amp;hellip;else&amp;hellip;&amp;quot; 是常用条件判断语句
+// 伪代码 if(表达式){ 语句1 ... }else { 语句2 ... } 在 if 的块中的语句如果只有一句，则可以省略外面的花括号，只写这条语句，但是不推荐这么做，这样会容易造成阅读时看错代码流程。在 if&amp;hellip;else 代码块中还可以继续继续嵌套 if&amp;hellip;else 代码块来处理复杂的条件判断逻辑。
+// 伪代码 if(表达式){ if(表达式){ 语句1 ... }else{ 语句2 ... } 语句3 .</description>
+            <content type="html"><![CDATA[<p>初学 JavaScript 要掌握的知识有哪些呢？</p>
+<h2 id="1表达式和语句">1.表达式和语句</h2>
+<p><strong>表达式：</strong> 一个式子，它具有表达某些信息的能力。比如<code>1+2</code>表达式的值为 3。需要注意的地方，<code>console.log</code>表达式的值为函数本身，但是<code>console.log(1)</code>表达式的值为 undefined，只是在控制台中显示的内容为 1。</p>
+<p><strong>语句：</strong> 描述一段内容的句子。比如<code>var a = 1</code></p>
+<p>它们两者的区别在于：</p>
+<ul>
+<li>表达式一般都有值，语句可能有也可能没有。</li>
+<li>语句一般会改变环境，比如声明或者赋值。</li>
+</ul>
+<p>但这些都不绝对，特殊情况特殊看待。</p>
+<h2 id="2-标识符的规则">2. 标识符的规则</h2>
+<p>在对变量名等标识符命名的时候并非随心所欲随便命名的，要遵守一定的约定规则。首先 JavaScript 是对大小写敏感的，<code>a</code>和<code>A</code>会被严格区分，所以有时候在函数命名上要小心避免上下文名称不同造成的意外错误。</p>
+<p>标识符第一个字符命名规则：</p>
+<ul>
+<li>不能是数字；</li>
+<li>可以是 Unicode 字符或$、_和中文；</li>
+</ul>
+<p>标识符第二个及以后的字符命名规则：</p>
+<ul>
+<li>可以为任意字符；</li>
+</ul>
+<p>注：标识符的命名要好认、好记通俗易懂。不要写很多个_或是使用.这种比较特殊的字符。标识符要写时好写，后面 review 时要好懂才行。</p>
+<h2 id="3条件判断语句">3.条件判断语句</h2>
+<p><strong>&ldquo;if&hellip;else&hellip;&quot;</strong> 是常用条件判断语句</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">// 伪代码
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">表达式</span>){
+    <span style="color:#a6e22e">语句1</span>
+    ...
+}<span style="color:#66d9ef">else</span> {
+    <span style="color:#a6e22e">语句2</span>
+    ...
+}
+</code></pre></div><p>在 if 的块中的语句如果只有一句，则可以省略外面的花括号，只写这条语句，但是不推荐这么做，这样会容易造成阅读时看错代码流程。在 if&hellip;else 代码块中还可以继续继续嵌套 if&hellip;else 代码块来处理复杂的条件判断逻辑。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">// 伪代码
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">表达式</span>){
+    <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">表达式</span>){
+        <span style="color:#a6e22e">语句1</span>
+        ...
+    }<span style="color:#66d9ef">else</span>{
+        <span style="color:#a6e22e">语句2</span>
+        ...
+    }
+    <span style="color:#a6e22e">语句3</span>
+    ...
+}<span style="color:#66d9ef">else</span> {
+    <span style="color:#a6e22e">语句4</span>
+    ...
+}
+</code></pre></div><p>多个条件判断可以使用<code>if...else if ... else</code>语法</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">表达式</span>){
+    <span style="color:#a6e22e">语句1</span>
+    ...
+}<span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">表达式</span>){
+    <span style="color:#a6e22e">语句2</span>
+    ...
+}<span style="color:#66d9ef">else</span> {
+    <span style="color:#a6e22e">语句3</span>
+    ...
+}
+</code></pre></div><p>有时候条件判断并不多的时候没必要使用 if&hellip;else，可以使用 <code>&amp;&amp;</code>来简化条件判断的代码。
+例如有这些需求：一个函数 a 的参数接收一个函数并在这个 a 函数体内调用传入的函数，为了确保调用时不会发生错误，我们通常可以这样写代码。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">a</span>(<span style="color:#a6e22e">fn</span>){
+    <span style="color:#a6e22e">fn</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">fn</span>()
+}
+<span style="color:#75715e">// fn &amp;&amp; fn() 等同于
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">fn</span>)
+    <span style="color:#a6e22e">fn</span>()
+</code></pre></div><p>另外一个短路运算符<code>||</code>则可以用来进行一些保底赋值操作。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">||</span> <span style="color:#ae81ff">100</span>
+<span style="color:#75715e">// 等同于
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">a</span>)
+    <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>
+</code></pre></div><h2 id="4循环">4.循环</h2>
+<p>循环操作可以使用<code>while</code>或者<code>for</code>,while 是表达式内的值为真时则执行块内语句。<code>for</code>语法可以看做是 while 的一个语法糖，因为我们在使用 while 是需要在 while 外部确定循环初始值，表达式内要有循环退出条件，循环体内有执行语句。但是这些都可以简化一下，现在我们来看看使用 for 如何做循环：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">5</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+	<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">i</span>)
+}
+</code></pre></div><p>延伸：由于变量提升，在 for 的代码块内使用定时器函数 setTimeout()函数时，会由于 var 定义的 i 变量从而使通过定时器函数输出的值为 i 循环完后最后的值。如果需要避免这种情况的发生，在声明并定义 i 时要使用<code>let</code>关键字去声明变量，这样就可以将变量 i 的作用域限定在当前的 for 代码块内。</p>
+<h2 id="5breakcontinue">5、break、continue</h2>
+<p>有时候我们并不想让循环完全执行，希望循环在执行带某个条件时可以跳出循环，此时可以使用到 break 和 continue 了。</p>
+<ul>
+<li>break：跳出本层循环</li>
+<li>continue：跳过本次循环</li>
+</ul>
+<p>在有两层循环的时候，在内部的第二层循环体内使用 break 可以跳出这层循环，但是不影响外部循环的执行。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">5</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+	<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">j</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">j</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">5</span>; <span style="color:#a6e22e">j</span><span style="color:#f92672">++</span>) {
+		<span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">j</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">2</span>)
+			<span style="color:#75715e">// 只跳出变量为 j 的这层循环
+</span><span style="color:#75715e"></span>			<span style="color:#66d9ef">break</span>
+	}
+	<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">i</span>)
+}
+</code></pre></div><h2 id="6label-语句">6.label 语句</h2>
+<p>用的很少，仅做了解。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Javascript" data-lang="Javascript">{
+    <span style="color:#a6e22e">a</span><span style="color:#f92672">:</span><span style="color:#ae81ff">1</span>
+}
+</code></pre></div><p>以上代码乍看还会以为是一个对象，但其实是一个 label，它是一个正常代码块内包含一些内容（上面的代码在 Chrome 中使用需要在<code>a:1</code>后面加上<code>;</code>，否则会被 Chrome 修改成一个对象）。有时候面试会问上面这个代码是什么，所以要了解一下。</p>
+<p>label 语法：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Javascript" data-lang="Javascript"><span style="color:#a6e22e">foo</span><span style="color:#f92672">:</span> {
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">1</span>);
+    <span style="color:#66d9ef">break</span> <span style="color:#a6e22e">foo</span>;
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;这行不会输出!&#39;</span>)
+}
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">2</span>)
+</code></pre></div><p>这种写法其实就是标记某个代码块，从而通过 continue、break 等影响代码执行流程。`</p>
+]]></content>
+        </item>
         
         <item>
             <title>浅析URL</title>
