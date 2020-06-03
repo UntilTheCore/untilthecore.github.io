@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 01 Jun 2020 23:11:21 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2020 23:35:27 +0800</lastBuildDate>
     
 	<atom:link href="https://untilthecore.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JavaScript对象基本用法</title>
+      <link>https://untilthecore.github.io/posts/javascript%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Wed, 03 Jun 2020 23:35:27 +0800</pubDate>
+      
+      <guid>https://untilthecore.github.io/posts/javascript%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
+      <description>对象 对象是无序的数据集合，是键值对的集合。
+对象的学习可以概括为增、删、改、查。
+如何创建对象？  使用字面量（&amp;quot;{}&amp;quot;）  let obj = { name: &amp;#39;zhangsan&amp;#39;, age: 18 } new Object()  let obj = new Object({&amp;#39;name&amp;#39;:&amp;#39;张三&amp;#39;,&amp;#39;age&amp;#39;:18}) 注意：对象内的键名是字符串，可以是任意字符，它不是标识符（关于标识符的内容可以看这里）。键名的字符串引号可以省略，但是省略后就要遵守标识符规则了。但是就算引号省略了，键名还是字符串，这是一定的。
+知道了键名一定是字符串，现在来看看一些特殊的地方。如果我们在创建对象的时候给键名加上了引号，那么里面的内容数字有多长都不会影响最终结果
+那要是在写的时候不在键名上加上引号呢？会发生什么？
+正如图中显示的，没有加上引号的键名会被优化成科学计数法的方式来显示。为了不让产生非预期结果，在创建对象时，键名最好加上引号。
+使用常量做键名已经了解了，那变量是否可以用作键名呢？答案是可以的。
+let person = &amp;#39;xm&amp;#39; let obj = { person: &amp;#39;xiaoming&amp;#39;, age: 18 } // person就是属性名,虽然没写引号，但它就是字符串 let obj1 = { [person]: &amp;#39;xiaoming&amp;#39;, age: 18 } // [person]的值才是属性名 如何删除对象的属性 使用关键字delete
+通过在查中的查找对象属性的方法可以以不同方式去删除对象中的特定属性和对应的属性值。
+let obj = { name: &amp;#39;zhangsan&amp;#39;, age: 18 } delete obj[&amp;#39;name&amp;#39;] 如何查看对象的属性 使用 Object.</description>
+    </item>
     
     <item>
       <title>JavaScript初识</title>
